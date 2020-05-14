@@ -15,6 +15,10 @@ public class Gestor extends Usuario{
 	@OneToMany(mappedBy = "gestor")
 	private List<ProgramaAcao> programasAcoes;
 	
+	@OneToMany(mappedBy = "gestor")
+	private List<Educacao> educacao;
+	
+	
 	//GET E SET
 	
 	public String getCargo() {
@@ -31,6 +35,16 @@ public class Gestor extends Usuario{
 
 	public void setProgramasAcoes(List<ProgramaAcao> programasAcoes) {
 		this.programasAcoes = programasAcoes;
-	}	
+	}
+
+	public List<Educacao> getEducacao() {
+		return educacao;
+	}
+
+	public void setEducacao(List<Educacao> educacao) {
+		this.educacao = educacao;
+	}
+	
+	
 	
 }

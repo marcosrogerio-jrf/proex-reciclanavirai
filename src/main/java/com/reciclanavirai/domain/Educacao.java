@@ -27,6 +27,48 @@ public class Educacao extends AbstractEntity<Long>{
 	
 	@ManyToOne @JoinColumn(name = "id_gestor_fk")
 	private Gestor gestor;
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public String getMateria() {
+		return materia;
+	}
+
+	public void setMateria(String materia) {
+		this.materia = materia;
+	}
+
+	public String getAutoria() {
+		return autoria;
+	}
+
+	public void setAutoria(String autoria) {
+		this.autoria = autoria;
+	}
+
+	public File getFotos() {
+		return fotos;
+	}
+
+	public void setFotos(File fotos) {
+		this.fotos = fotos;
+	}
+
+	public Gestor getGestor() {
+		return gestor;
+	}
+
+	public void setGestor(Gestor gestor) {
+		this.gestor = gestor;
+	}
+	
+	
 	
 	
 	

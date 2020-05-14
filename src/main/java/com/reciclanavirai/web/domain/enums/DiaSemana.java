@@ -32,9 +32,9 @@ public enum DiaSemana {
 		if (codigo == null) {
 			return null;
 		}
-		for (DiaSemana tC : DiaSemana.values()) {
-			if (codigo.equals(tC.getCodigo())) {
-				return tC;
+		for (DiaSemana x : DiaSemana.values()) {
+			if (codigo.equals(x.getCodigo())) {
+				return x;
 			}
 		}
 		throw new IllegalArgumentException("Código Invalido: "+ codigo);

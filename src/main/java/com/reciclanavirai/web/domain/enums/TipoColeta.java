@@ -26,9 +26,9 @@ public enum TipoColeta {
 		if (codigo == null) {
 			return null;
 		}
-		for (TipoColeta tC : TipoColeta.values()) {
-			if (codigo.equals(tC.getCodigo())) {
-				return tC;
+		for (TipoColeta x : TipoColeta.values()) {
+			if (codigo.equals(x.getCodigo())) {
+				return x;
 			}
 		}
 		throw new IllegalArgumentException("Código Invalido: "+ codigo);

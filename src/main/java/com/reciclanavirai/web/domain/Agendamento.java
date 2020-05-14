@@ -1,7 +1,5 @@
 package com.reciclanavirai.web.domain;
 
-import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
@@ -15,7 +13,7 @@ import com.reciclanavirai.web.domain.enums.TipoColeta;
 
 public class Agendamento extends AbstractEntity<Long> {
 	@Column(nullable = false, length = 20)
-	private Date data;
+	private String horario;
 	@Column(name = "tipo_coleta", nullable = false)
 	private Integer tipoColeta;
 	@Column(name = "dia_semana", nullable = false)
@@ -26,12 +24,12 @@ public class Agendamento extends AbstractEntity<Long> {
 	@JoinColumn(name = "bairro_id")
 	private Bairro bairro;
 
-	public Date getData() {
-		return data;
+	public String getHorario() {
+		return horario;
 	}
 
-	public void setData(Date data) {
-		this.data = data;
+	public void setData(String horario) {
+		this.horario = horario;
 	}
 
 	public TipoColeta getTipoColeta() {

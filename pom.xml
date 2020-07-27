@@ -42,6 +42,40 @@
 			<optional>true</optional>
 		</dependency>
 		
+		<!-- Biblioteca Lombok -->
+		<!-- Biblioteca que simplifica a classe substituido os metodos comum nas 
+			classes como getter,setter , toString,equals, etc por anotações. -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+		
+		<!-- ModelMapper -->
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		
+		<!-- Swagger -->
+		<!-- Biblioteca para documentar a API -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.7.0</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Swagger UI -->
+		
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.7.0</version>
+			<scope>compile</scope>
+		</dependency>
+		
+		
 		<!-- Dependência - H2 -->
 		<!-- Banco de Dados relacional, executado em memoria para testes e implementação inicial -->
 		<!-- Para executar entre com a seguinte URL - localhost:8080/h2-console -->
@@ -49,6 +83,12 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
+		</dependency>
+		
+		<!-- Banco de Dados Postgres -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
 		</dependency>
 		
 		<!-- Dependência - Test -->
